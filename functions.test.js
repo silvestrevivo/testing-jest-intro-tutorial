@@ -53,3 +53,17 @@ test("Admin should be in usernames", () => {
   // with contain() matcher we can test arrays
   expect(usernames).toContain("evelien");
 });
+
+test("User fetched name should be Leanne Graham", () => {
+  // assertions() is used in async test to ensure that que API is at least once called
+  expect.assertions(1);
+  return functions
+    .fetchUser()
+    .then(data => expect(data.name).toEqual("Leanne Graham"));
+});
+
+test("should do the same with asyn await", async () => {
+  expect.assertions(1);
+  const data = await functions.fetchUser();
+  expect(data.name).toEqual("Leanne Graham");
+});
