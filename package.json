@@ -1,0 +1,18 @@
+{
+  "name": "testing-jest-intro-tutorial",
+  "version": "1.0.0",
+  "description": "jest intro tutorial regarding the youtube tutorial of @bradtraversy",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "test",
+    "unittesting"
+  ],
+  "author": "@silvestrevivo",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
