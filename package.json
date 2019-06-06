@@ -4,7 +4,7 @@
   "description": "jest intro tutorial regarding the youtube tutorial of @bradtraversy",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "keywords": [
     "test",
