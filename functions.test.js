@@ -4,6 +4,14 @@ with the .test.js sufix. ( npm install -D jest )
 */
 const functions = require("./functions");
 
+// fake functions to emulate API
+const initDataBase = () => console.log('Database initialized...')
+const closeDataBase = () => console.log('Database closed...')
+
+beforeEach(() => initDataBase());
+afterEach(() => closeDataBase());
+// with describe we can create blocks of testing
+
 test("Adds 2 + 2 to equal 4", () => {
   expect(functions.add(2, 2)).toBe(4); //expect() is an assertion and toBe() is a matcher
 });
